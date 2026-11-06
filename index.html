@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Pixora - Explore beautiful photography from around the world.">
+
+    <title>Pixora | Creative Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">pixora<span>.</span></a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <a href="#gallery" class="nav-button">Explore Gallery ↗</a>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">THE WORLD THROUGH OUR LENS</span>
+
+            <h1>
+                Every Picture<br>
+                Tells a <span>Story.</span>
+            </h1>
+
+            <p>
+                Discover extraordinary moments, beautiful places,
+                and breathtaking photography from around the world.
+            </p>
+
+            <a href="#gallery" class="primary-button">
+                Explore Collection <span>→</span>
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200"
+                alt="Beautiful mountain landscape">
+        </div>
+
+        <div class="hero-bottom">
+            <span>CAPTURING THE BEAUTY OF LIFE</span>
+            <span>SCROLL TO EXPLORE ↓</span>
+        </div>
+
+    </section>
+
+
+    <!-- Gallery Section -->
+    <main>
+
+        <section class="gallery-section" id="gallery">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">OUR COLLECTION</span>
+                    <h2>Explore the <span>Gallery.</span></h2>
+                </div>
+
+                <p>
+                    A curated collection of beautiful photographs
+                    from different corners of the world.
+                </p>
+            </div>
+
+
+            <!-- Category Filters -->
+            <div class="filter-container">
+
+                <button class="filter-btn active" data-filter="all">
+                    All Photos
+                </button>
+
+                <button class="filter-btn" data-filter="nature">
+                    Nature
+                </button>
+
+                <button class="filter-btn" data-filter="architecture">
+                    Architecture
+                </button>
+
+                <button class="filter-btn" data-filter="animals">
+                    Animals
+                </button>
+
+                <button class="filter-btn" data-filter="technology">
+                    Technology
+                </button>
+
+            </div>
+
+
+            <!-- Image Gallery -->
+            <div class="gallery" id="gallery-container">
+
+                <!-- Images are generated using JavaScript -->
+
+            </div>
+
+            <p class="gallery-count" id="gallery-count"></p>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+
+            <div class="about-content">
+
+                <span class="eyebrow">ABOUT PIXORA</span>
+
+                <h2>
+                    Beauty is everywhere.<br>
+                    <span>Look closer.</span>
+                </h2>
+
+                <p>
+                    Pixora is a creative image gallery designed to
+                    celebrate photography, creativity and the beauty
+                    of our world. Explore inspiring visuals captured
+                    through different perspectives.
+                </p>
+
+            </div>
+
+            <div class="about-stat">
+                <h3>01</h3>
+                <p>World. One Gallery. Endless Stories.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+
+        <button class="close-btn" id="close-btn" aria-label="Close">
+            &times;
+        </button>
+
+        <button class="lightbox-nav prev-btn" id="prev-btn" aria-label="Previous image">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img src="" alt="" id="lightbox-image">
+
+            <div class="lightbox-info">
+                <div>
+                    <h3 id="lightbox-title"></h3>
+                    <p id="lightbox-category"></p>
+                </div>
+
+                <span id="image-counter"></span>
+            </div>
+
+        </div>
+
+        <button class="lightbox-nav next-btn" id="next-btn" aria-label="Next image">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="#" class="logo">pixora<span>.</span></a>
+
+        <p>Capturing moments. Creating memories.</p>
+
+        <p class="copyright">
+            © 2026 Pixora. Created with HTML, CSS & JavaScript.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
